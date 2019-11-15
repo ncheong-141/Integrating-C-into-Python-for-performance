@@ -15,35 +15,35 @@ The steps performed:
     
 In order to run the Python script, the "Cxx_PythonFunction_variant.pyd" file must be in your Python "DLLs" folder. However, the results are
 below: 
-
+  Selective sort algorithm: test output and execution time using std::vector BY REFERENCE (requires custom dtype IntVector (std::vector<int>))
 " ----------
-Selective sort algorithm: test output and execution time using std::vector BY REFERENCE (requires custom dtype IntVector (std::vector<int>))
+    Selective sort algorithm: test output and execution time using std::vector BY REFERENCE (requires custom dtype IntVector)
 
-C++ function variant took:      0.03873 seconds
-Python function variant took:   4.30719 seconds
+    C++ function variant took:      0.03873 seconds
+    Python function variant took:   4.30719 seconds
 
-C++ took 0.0090% of the time of Python. (111.21 times faster)
-C++ and Python function outputs match for: | selective_sort | 
-
-
-
-Selective sort algorithm: test output and execution time using PY::LIST BY REFERENCE (requires Python dtype)
-
-C++ function variant took:      1.38211 seconds
-Python function variant took:   4.81058 seconds
-
-C++ took 0.2873% of the time of Python. (3.48 times faster)
-C++ and Python function outputs match for: | selective_sort_pylist | 
+    C++ took 0.0090% of the time of Python. (111.21 times faster)
+    C++ and Python function outputs match for: | selective_sort | 
 
 
 
-Selective sort algorithm: test output and execution time using NP ARRAY BY REFERENCE (requires Numpy dtype)
+    Selective sort algorithm: test output and execution time using PY::LIST BY REFERENCE (requires Python dtype)
 
-C++ function variant took:      0.34305 seconds
-Python function variant took:   4.71227 seconds
+    C++ function variant took:      1.38211 seconds
+    Python function variant took:   4.81058 seconds
 
-C++ took 0.0728% of the time of Python. (13.73 times faster)
-C++ and Python function outputs match for: | selective_sort_numparr | 
+    C++ took 0.2873% of the time of Python. (3.48 times faster)
+    C++ and Python function outputs match for: | selective_sort_pylist | 
+
+
+
+    Selective sort algorithm: test output and execution time using NP ARRAY BY REFERENCE (requires Numpy dtype)
+
+    C++ function variant took:      0.34305 seconds
+    Python function variant took:   4.71227 seconds
+
+    C++ took 0.0728% of the time of Python. (13.73 times faster)
+    C++ and Python function outputs match for: | selective_sort_numparr | 
 " ----------
 
 
