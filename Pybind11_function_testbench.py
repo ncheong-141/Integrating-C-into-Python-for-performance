@@ -174,7 +174,7 @@ if __name__ == '__main__' :
     """ Selective sort test using C++ datatype std::vector<int> (IntVector)
     =====================================================================================================================================
     """
-    print("Selective sort algoirthm: test output and execution time using PASS BY REFERENCE (requires custom dtype IntVector (std::vector<int>))")
+    print("Selective sort algorithm: test output and execution time using std::vector BY REFERENCE (requires custom dtype IntVector (std::vector<int>))")
     
     # Generate data 
     data_py, data_cxx = Generate_randomPyCxxData_1D(NP, 'int');
@@ -201,7 +201,7 @@ if __name__ == '__main__' :
     """ Selective sort test passing in a Python List by reference
     =====================================================================================================================================
     """ 
-    print("\n\nSelective sort algoirthm: test output and execution time using PY::LIST BY REFERENCE (requires Python dtype)")
+    print("\n\nSelective sort algorithm: test output and execution time using PY::LIST BY REFERENCE (requires Python dtype)")
 
     # Generate data 
     data_py, data_cxx = Generate_randomPyCxxData_1D(NP, 'int');
@@ -229,7 +229,7 @@ if __name__ == '__main__' :
     """ Selective sort test passing in a numpy array by reference
     =====================================================================================================================================
     """ 
-    print("\n\nSelective sort algoirthm: test output and execution time using NP ARRAY BY REFERENCE (requires Numpy dtype)")
+    print("\n\nSelective sort algorithm: test output and execution time using NP ARRAY BY REFERENCE (requires Numpy dtype)")
 
     # Generate data 
     data_py, data_cxx = Generate_randomPyCxxData_1D(NP, 'int');
