@@ -50,6 +50,7 @@ below:
 
 
 There is clear performance advantages integrating C++ functions into Python, particularly by integrating C++ types (the std::vector<int>)) into Python and passing by reference. This is likely due to moreorless using "pure" c++, whereas with the Python List and NumPy array types there is an additional "middle man" in order to use Python types within C++.
+
 However, the cost of the huge performance gain by using C++ datatypes in Python is having to use C++ datatypes within Python, where you can lose functionality of NumPy by not using NumPy arrays (unless you copy data between C++ arrays and NumPy arrays, which is the default type conversion mechanic that PyBind11 does by default if you dont pass by reference). 
 
 Furthermore, since you are unable to see the implementation of the C++ functions/if you dont code on C++, Pybind11 offers an option
