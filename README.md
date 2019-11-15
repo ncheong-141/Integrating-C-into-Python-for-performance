@@ -15,7 +15,8 @@ The steps performed:
     
 In order to run the Python script, the "Cxx_PythonFunction_variant.pyd" file must be in your Python "DLLs" folder. However, the results are
 below: 
-  Selective sort algorithm: test output and execution time using std::vector BY REFERENCE (requires custom dtype IntVector (std::vector<int>))
+
+
 " ----------
     Selective sort algorithm: test output and execution time using std::vector BY REFERENCE (requires custom dtype IntVector)
 
@@ -47,9 +48,7 @@ below:
 " ----------
 
 
-There is clear performance advantages integrating C++ functions into Python, particularly by integrating C++ types (the std::vector<int>)
-) into Python and passing by reference. This is likely due to moreorless using "pure" c++, whereas with the Python List and NumPy array types
-there is an additional "middle man" in order to use Python types within C++. 
+There is clear performance advantages integrating C++ functions into Python, particularly by integrating C++ types (the std::vector<int>)) into Python and passing by reference. This is likely due to moreorless using "pure" c++, whereas with the Python List and NumPy array types there is an additional "middle man" in order to use Python types within C++. 
 
 Furthermore, since you are unable to see the implementation of the C++ functions/if you dont code on C++, Pybind11 offers an option
 to display documentation of a C++ function in Python. Here, I have inputed the equivalent Python code as well as a function description. 
@@ -59,6 +58,7 @@ For example,
 >> getDescriptionAndEquivalentPythonCode(cxx.selective_sort)
 
 Output:
+
         ---- Selective sort algorithm for ordering data minimum to maximum using C++ std::vector<int> datatype ----
 
         Equivalent Python code: 
