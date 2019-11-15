@@ -17,7 +17,8 @@ In order to run the Python script, the "Cxx_PythonFunction_variant.pyd" file mus
 below: 
 
 
-" ----------
+
+
     Selective sort algorithm: test output and execution time using std::vector BY REFERENCE (requires custom dtype IntVector)
 
     C++ function variant took:      0.03873 seconds
@@ -45,7 +46,7 @@ below:
 
     C++ took 0.0728% of the time of Python. (13.73 times faster)
     C++ and Python function outputs match for: | selective_sort_numparr | 
-" ----------
+
 
 
 There is clear performance advantages integrating C++ functions into Python, particularly by integrating C++ types (the std::vector<int>)) into Python and passing by reference. This is likely due to moreorless using "pure" c++, whereas with the Python List and NumPy array types there is an additional "middle man" in order to use Python types within C++. 
@@ -54,7 +55,7 @@ Furthermore, since you are unable to see the implementation of the C++ functions
 to display documentation of a C++ function in Python. Here, I have inputed the equivalent Python code as well as a function description. 
 For example, 
 
-" ----------
+
 >> getDescriptionAndEquivalentPythonCode(cxx.selective_sort)
 
 Output:
